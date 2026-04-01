@@ -1,0 +1,228 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 10px;
+    color: #e0e0e0;
+    background-color: #0b0218;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #9057b9;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    z-index: 100;
+    width: 100%;
+    background-color: #190534;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #190534;
+    padding: 1rem;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease; /* Transición simple */
+}
+
+nav a:hover {
+    color: #9057b9;
+}
+
+#sobre-mi {
+    text-align: center;
+    padding: 1rem 1rem;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #9057b9;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+#sobre-mi img {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #9057b9;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+#sobre-mi p {
+    font-size: 1.2rem; 
+    line-height: 1.5; 
+    color: #e0e0e0;
+  }
+
+
+/* Flexbox en tarjetas proyectos */
+.flex-tarjetas-proyectos, .flex-tarjetas-peliculas {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.tarjeta {
+    background: rgb(219, 205, 225);
+    color: #190534;
+    border-radius:10px;
+    padding: 15px;
+    width: 100%;
+    max-width: 20rem;
+    box-shadow: 0 4px 15px rgba(191, 152, 219, 0.4);
+    transition: transform 0.3s ease; /* TRANSICION PARA HOVER */
+}
+
+.tarjeta p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #582d90;
+}
+
+/* EFECTO HOVER (Animación) */
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(191, 152, 219, 0.4);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+#habilidades {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.contenedor-tabla {
+    max-width: 50rem;
+    margin: auto;
+    overflow-x: auto; 
+    padding: 10px;
+  }
+
+.tabla-habilidades {
+    width: 100%;
+    max-width: 50rem;
+    border-collapse: collapse;
+    background-color: #190534;
+    color: #e0e0e0;
+}
+
+.tabla-habilidades th {
+    background-color: #9057b9;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tabla-habilidades th, .tabla-habilidades td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #9057b9;
+}
+
+/* Formulario y Botones */
+#contacto {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    margin: 0 auto;
+    background-color: #2f0c5ce6;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(191, 152, 219, 0.4);
+    text-align: left;
+}
+
+label {
+    color: #e0e0e0;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 1.5rem;
+    padding: 10px;
+    border: 1px solid #9057b9; 
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.773);
+    color: #190534;
+    font-size: 1rem;
+}
+
+
+
+.btn-enviar {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #219150;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #190534;
+    color: white;
+}
+
+/* Responsividad básica */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .tabla-habilidades th, .tabla-habilidades td {
+        padding: 0.5rem 0.2rem; 
+        font-size: 0.85rem;
+        word-wrap: break-word;
+    }
+    
+    .flex-tarjetas-proyectos, .flex-tarjetas-peliculas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contacto h2 {
+        margin-left: 0;
+
+    }
+}
