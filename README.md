@@ -18,7 +18,8 @@
 - [x] Proyecto publicado utilizando GitHub Pages.
 - [x] En el "README.md" se indica la URL de GitHub Pages.
 > **URL del proyecto:** https://mailenjuarez1.github.io/MiPortfolio-Frontend/
-
+> **URL del proyecto en Vercel:** https://mi-portfolio-frontend.vercel.app/
+> 
 ### 🔤 • Uso de Google Fonts:
 - [x] Enlace a Google Fonts incluido en la sección "head" del HTML.
 - [x] La tipografía importada se aplica en el sitio.
