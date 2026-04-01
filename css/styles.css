@@ -13,7 +13,7 @@ h1 {
 }
 
 nav {
-    position: sticky;
+    position: sticky; /* Hace que el menú se quede fijo en la parte superior al hacer scroll */
     top: 0;
     margin: 0;
     margin-bottom: 20px;
@@ -24,7 +24,7 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra los enlaces horizontalmente */
     list-style: none;
     background-color: #190534;
     padding: 1rem;
@@ -74,7 +74,7 @@ h2 {
 /* Flexbox en tarjetas proyectos */
 .flex-tarjetas-proyectos, .flex-tarjetas-peliculas {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /*fuerza a las tarjetas a estar en una sola fila */
     gap: 20px;
     justify-content: space-around;
     padding: 20px;
@@ -99,7 +99,7 @@ h2 {
 
 /* EFECTO HOVER (Animación) */
 .tarjeta:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px); /* Eleva la tarjeta al hacer hover */
     box-shadow: 0 4px 15px rgba(191, 152, 219, 0.4);
 }
 
@@ -191,7 +191,7 @@ input, textarea {
 }
 
 .btn-enviar:hover {
-    background-color: #219150;
+    background-color: #219150; /* Oscurece el botón al hacer hover */
 }
 
 footer {
@@ -205,7 +205,7 @@ footer {
 @media (max-width: 600px) {
     nav ul {
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: wrap; /*fuerza a los enlaces a estar en varias filas, posteriormente se implementará menú hamburguesa*/
         gap: 10px;
         padding: 10px;
     }
@@ -217,7 +217,7 @@ footer {
     }
     
     .flex-tarjetas-proyectos, .flex-tarjetas-peliculas {
-        flex-direction: column;
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
         align-items: center;
     }
 
