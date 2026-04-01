@@ -17,7 +17,7 @@
 - [x] Proyecto subido al repositorio.
 - [x] Proyecto publicado utilizando GitHub Pages.
 - [x] En el "README.md" se indica la URL de GitHub Pages.
-> **URL del proyecto:** 
+> **URL del proyecto:** https://mailenjuarez1.github.io/MiPortfolio-Frontend/
 
 ### 🔤 • Uso de Google Fonts:
 - [x] Enlace a Google Fonts incluido en la sección "head" del HTML.
